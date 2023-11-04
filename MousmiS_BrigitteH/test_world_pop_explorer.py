@@ -46,6 +46,6 @@ def test_get_continents():
 
 def test_get_continent_populations():
     expected = True
-    wpe.country_to_pop()
+    wpe.set_country_to_pop()
     actual = wpe.get_continent_populations()['Asia'] > 4.5 * (10 ** 9)
     assert expected == actual
